@@ -17,90 +17,135 @@
     <link rel="stylesheet" type="text/css" href="practice.css">
     <title>練習1</title>
 </head>
-
 <body>
 
     <!-- nav_sidebar -->
-    <ul class="nav flex-column">
 
-        <div class="profile">
-            <img id="pic" src="https://i.imgur.com/kxCklCW.png" alt="my_picture">
-            <span class="dropdown show">
-                <a class="btn btn-secondary btn-sm dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
-                    aria-expanded="false">
-                    Jennifer Chen
-                </a>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                    <a class="dropdown-item" href="#">hello</a>
-                    <a class="dropdown-item" href="#">hi</a>
-                </div>
-            </span>
-        </div>
+    <div class="sidebar">
 
-        <h4>YOUR LIBRARY</h4>
-        <li class="nav-item">
-            <a class="nav-link" href="#">
-                <i class="far fa-clock"></i> Recent Played</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">
-                <i class="fas fa-music"></i> Songs</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">
-                <i class="far fa-image"></i> Albums</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">
-                <i class="far fa-user"></i> Artist</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">
-                <i class="far fa-heart"></i> Liked</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">
-                <i class="far fa-file-alt"></i> Local Files</a>
-        </li>
+        <ul class="nav flex-column">
 
-        <h4>YOUR PLAY LISTS</h4>
-        <li class="nav-item">
-            <a class="nav-link" href="#">
-                <i class="far fa-dot-circle"></i> 100 Favorite Songs</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">
-                <i class="far fa-dot-circle"></i> Bleach of best</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">
-                <i class="far fa-dot-circle"></i> Sports songs</a>
-        </li>
+            <div class="profile">
+                <img id="pic" src="https://i.imgur.com/kxCklCW.png" alt="my_picture">
+                <span class="dropdown show">
+                    <a class="btn btn-secondary btn-sm dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        Jennifer Chen
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item" href="#">hello</a>
+                        <a class="dropdown-item" href="#">hi</a>
+                    </div>
+                </span>
+            </div>
 
-        <h4>COLLECTION</h4>
-        <li class="nav-item">
-            <a class="nav-link" href="#">
-                <i class="far fa-address-book"></i> 11111 list</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">
-                <i class="far fa-address-book"></i> 22222 list</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">
-                <i class="far fa-address-book"></i> 33333 list</a>
-        </li>
+            <h4>YOUR LIBRARY</h4>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <i class="far fa-clock"></i> Recent Played</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <i class="fas fa-music"></i> Songs</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <i class="far fa-image"></i> Albums</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <i class="far fa-user"></i> Artist</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <i class="far fa-heart"></i> Liked</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <i class="far fa-file-alt"></i> Local Files</a>
+            </li>
 
-    </ul>
+            <h4>YOUR PLAY LISTS</h4>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <i class="far fa-dot-circle"></i> 100 Favorite Songs</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <i class="far fa-dot-circle"></i> Bleach of best</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <i class="far fa-dot-circle"></i> Sports songs</a>
+            </li>
+
+            <h4>COLLECTION</h4>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <i class="far fa-address-book"></i> 11111 list</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <i class="far fa-address-book"></i> 22222 list</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <i class="far fa-address-book"></i> 33333 list</a>
+            </li>
+
+        </ul>
+
+    </div>
+
 
     <div id="big">
 
+        <!-- <div class="above_grey_line">
+ 
 
+        </div> -->
+        <!-- <nav class="navbar navbar-light bg-light justify-content-start"> -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
 
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active pt">
+                    <button type="button" class="btn btn-secondary">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
 
-        <nav class="navbar navbar-light bg-light ">
+                    <button type="button" class="btn btn-secondary">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </li>
 
-            <div class="btn-group p-2" role="group" aria-label="Basic example">
+                <li class="nav-item bell pt">
+                    <form class="form-inline">
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Type to search.." aria-describedby="basic-addon2">
+                            <div class="input-group-append">
+                                <button class="btn btn-outline-secondary" type="button">
+                                    <i class="fas fa-search"></i>
+                                </button>
+                            </div>
+                    </form>
+                </li>
+            </ul>
+
+            <!-- Right -->
+            <ul class="navbar-nav ml-auto">
+
+                <li class="nav-item bell">
+                    <a class="nav-link" href="#">
+                        <i class="fas fa-cog"></i>
+                    </a>
+                </li>
+                <li class="nav-item bell">
+                    <a class="nav-link" href="#">
+                        <i class="fas fa-bell"></i>
+                    </a>
+                </li>
+
+                <!-- <div class="btn-group p-2" role="group" aria-label="Basic example">
                 <button type="button" class="btn btn-secondary">
                     <i class="fas fa-chevron-left"></i>
                 </button>
@@ -118,8 +163,7 @@
                             <i class="fas fa-search"></i>
                         </button>
                     </div>
-            </form>
-
+            </form> -->
 
         </nav>
 
@@ -186,35 +230,35 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-sm">
-                            <img src="https://i.imgur.com/G1VZOKX.png" class="rounded" alt="..." height="50" width="50">                            hello11111
+                            <img src="https://i.imgur.com/G1VZOKX.png" class="rounded" alt="..." height="50" width="50"> hello11111
                         </div>
                         <div class="col-sm">
-                            <img src="https://i.imgur.com/cUMmJo6.png" class="rounded" alt="..." height="50" width="50">                            hello2222
+                            <img src="https://i.imgur.com/cUMmJo6.png" class="rounded" alt="..." height="50" width="50"> hello2222
                         </div>
                         <div class="col-sm">
-                            <img src="https://i.imgur.com/G1VZOKX.png" class="rounded" alt="..." height="50" width="50">                            hello13333
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm">
-                            <img src="https://i.imgur.com/xJ7lys6.png" class="rounded" alt="..." height="50" width="50">                            hello11111
-                        </div>
-                        <div class="col-sm">
-                            <img src="https://i.imgur.com/TQGJvry.png" class="rounded" alt="..." height="50" width="50">                            hello2222
-                        </div>
-                        <div class="col-sm">
-                            <img src="https://i.imgur.com/cUMmJo6.png" class="rounded" alt="..." height="50" width="50">                            hello13333
+                            <img src="https://i.imgur.com/G1VZOKX.png" class="rounded" alt="..." height="50" width="50"> hello13333
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-sm">
-                            <img src="https://i.imgur.com/cUMmJo6.png" class="rounded" alt="..." height="50" width="50">                            hello11111
+                            <img src="https://i.imgur.com/xJ7lys6.png" class="rounded" alt="..." height="50" width="50"> hello11111
                         </div>
                         <div class="col-sm">
-                            <img src="https://i.imgur.com/G1VZOKX.png" class="rounded" alt="..." height="50" width="50">                            hello2222
+                            <img src="https://i.imgur.com/TQGJvry.png" class="rounded" alt="..." height="50" width="50"> hello2222
                         </div>
                         <div class="col-sm">
-                            <img src="https://i.imgur.com/xJ7lys6.png" class="rounded" alt="..." height="50" width="50">                            hello13333
+                            <img src="https://i.imgur.com/cUMmJo6.png" class="rounded" alt="..." height="50" width="50"> hello13333
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm">
+                            <img src="https://i.imgur.com/cUMmJo6.png" class="rounded" alt="..." height="50" width="50"> hello11111
+                        </div>
+                        <div class="col-sm">
+                            <img src="https://i.imgur.com/G1VZOKX.png" class="rounded" alt="..." height="50" width="50"> hello2222
+                        </div>
+                        <div class="col-sm">
+                            <img src="https://i.imgur.com/xJ7lys6.png" class="rounded" alt="..." height="50" width="50"> hello13333
                         </div>
                     </div>
                 </div>
